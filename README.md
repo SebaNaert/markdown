@@ -12,7 +12,7 @@ https://getbootstrap.com/
 
 https://www.npmjs.com/package/dompurify
 
-### démarrer l'application
+## Démarrer l'application
 
 ### `npm start`
 
@@ -20,4 +20,3 @@ https://www.npmjs.com/package/dompurify
 
 ``` npm install ``` OU 
 ``` npm i ```
-
