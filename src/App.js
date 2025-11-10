@@ -9,6 +9,25 @@ class App extends Component {
   state = {
     text : sampleText
   }
+
+  componentDidMount(){
+    console.log('montage')
+    const text = localStorage.getItem("myText")
+    if(text)
+    {
+      this.setState({text})
+    } else {
+      this.setState({text:sampleText})
+    }
+  }
+  componentDidUpdate(){
+    console.log('update')
+    const text = this.state.text
+    localStorage.setItem('myText', text)
+  }
+  componentWillUnmount(){
+    console.log('Démontage')
+  }
   handleChange = (event) => {
     // console.log(event)
     const text = event.target.value;
